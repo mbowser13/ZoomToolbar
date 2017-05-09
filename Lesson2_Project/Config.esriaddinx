@@ -1,0 +1,59 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>Lesson2_Project</Name>
+  <AddInID>{036bbb89-17e0-4a93-99c0-3f56e8a53044}</AddInID>
+  <Description></Description>
+  <Version>1.0</Version>
+  <Image>Images\Lesson2_Project.png</Image>
+  <Author>Michael Bowser</Author>
+  <Company>GEOG489</Company>
+  <Date>1/26/2017</Date>
+  <Targets>
+    <Target name="Desktop" version="10.4" />
+  </Targets>
+  <AddIn language="CLR" library="Lesson2_Project.dll" namespace="Lesson2_Project">
+    <ArcMap>
+      <Commands>
+        <Button id="GEOG489_Lesson2_Project_CreditExercise_1" class="CreditExercise_1" message=" Report the number of fields in the second layer" caption="Credit Exercise 1" tip=" Report the number of fields in the second layer" category="GEOG489_Lesson2_MMB" image="Images\CreditExercise_1.png" />
+        <Button id="GEOG489_Lesson2_Project_CreditExercise_2" class="CreditExercise_2" message="Expand/collapse each data frame's list of layers in the Table of Contents" caption="Credit Exercise 2" tip="Expand/collapse each data frame's list of layers in the Table of Contents" category="GEOG489_Lesson2_MMB" image="Images\CreditExercise_2.png" />
+        <Button id="GEOG489_Lesson2_Project_CreditExercise_3" class="CreditExercise_3" message="Write a function to convert an input string to a new form" caption="Credit Exercise 3" tip="Write a function to convert an input string to a new form" category="GEOG489_Lesson2_MMB" image="Images\CreditExercise_3.png" />
+        <Button id="GEOG489_Lesson2_Project_ZoomIn125" class="ZoomIn125" message="Zoom in 125%" caption="Zoom in 125%" tip="Zoom in 125%" category="GEOG489_Lesson2_MMB" image="Images\ZoomIn125.png" />
+        <Button id="GEOG489_Lesson2_Project_ZoomIn200" class="ZoomIn200" message="Zoom In 200%" caption="Zoom In 200%" tip="Zoom In 200%" category="GEOG489_Lesson2_MMB" image="Images\ZoomIn200.png" />
+        <Button id="GEOG489_Lesson2_Project_ZoomIn400" class="ZoomIn400" message="Zoom In 400%" caption="Zoom In 400%" tip="Zoom In 400%" category="GEOG489_Lesson2_MMB" image="Images\ZoomIn400.png" />
+        <Button id="GEOG489_Lesson2_Project_ZoomOut125" class="ZoomOut125" message="Zoom Out 125%" caption="Zoom Out 125%" tip="Zoom Out 125%" category="GEOG489_Lesson2_MMB" image="Images\ZoomOut125.png" />
+        <Button id="GEOG489_Lesson2_Project_ZoomOut200" class="ZoomOut200" message="Zoom Out 200%" caption="Zoom Out 200%" tip="Zoom Out 200%" category="GEOG489_Lesson2_MMB" image="Images\ZoomOut200.png" />
+        <Button id="GEOG489_Lesson2_Project_ZoomOut400" class="ZoomOut400" message="Zoom Out 400%" caption="Zoom Out 400%" tip="Zoom Out 400%" category="GEOG489_Lesson2_MMB" image="Images\ZoomOut400.png" />
+      </Commands>
+      <Menus>
+        <Menu id="GEOG489_Lesson2_Project_CreditExerciseMenu" caption="Credit Exercise Menu" isRootMenu="false">
+          <Items>
+            <Button refID="GEOG489_Lesson2_Project_CreditExercise_1" />
+            <Button refID="GEOG489_Lesson2_Project_CreditExercise_2" separator="true" />
+            <Button refID="GEOG489_Lesson2_Project_CreditExercise_3" separator="true" />
+          </Items>
+        </Menu>
+        <Menu id="GEOG489_Lesson2_Project_ZoomMenu" caption="Zoom Level Menu" isRootMenu="false">
+          <Items>
+            <Button refID="GEOG489_Lesson2_Project_ZoomIn400" />
+            <Button refID="GEOG489_Lesson2_Project_ZoomIn200" />
+            <Button refID="GEOG489_Lesson2_Project_ZoomIn125" />
+            <Button refID="GEOG489_Lesson2_Project_ZoomOut125" />
+            <Button refID="GEOG489_Lesson2_Project_ZoomOut200" />
+            <Button refID="GEOG489_Lesson2_Project_ZoomOut400" />
+          </Items>
+        </Menu>
+      </Menus>
+      <Toolbars>
+        <Toolbar id="GEOG489_Lesson2_Project_CreditExerciseToolbar" caption="Credit Exercise Toolbar" showInitially="true">
+          <Items>
+            <Menu refID="GEOG489_Lesson2_Project_CreditExerciseMenu" />
+          </Items>
+        </Toolbar>
+        <Toolbar id="GEOG489_Lesson2_Project_ZoomToolbar" caption="Zoom Toolbar" showInitially="true">
+          <Items>
+            <Item refID="GEOG489_Lesson2_Project_ZoomMenu" />
+          </Items>
+        </Toolbar>
+      </Toolbars>
+    </ArcMap>
+  </AddIn>
+</ESRI.Configuration>
